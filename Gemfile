@@ -29,7 +29,8 @@ gem 'owlcarousel-rails'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+
 
 
 # Use Capistrano for deployment
