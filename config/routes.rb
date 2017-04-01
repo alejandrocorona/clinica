@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+
+  get 'admin' => 'admin#index'
+
+  controller :sessions do
+    get  'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+  resources :users
+  resources :users
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   get '/signin',  to: 'sessions#new'

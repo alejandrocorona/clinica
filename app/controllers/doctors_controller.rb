@@ -1,5 +1,6 @@
 class DoctorsController < ApplicationController
   before_action :set_doctor, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authorize, only: [:create, :update, :destroy]
 
   # GET /doctors
   # GET /doctors.json

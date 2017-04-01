@@ -11,13 +11,15 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      
+      <% if session[:user_id] %>
       <li class="active"><a><%= link_to "Inicio", root_path %> &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
       <li class="active"><a><%= link_to "Doctor", doctors_path %> &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
       <li class="active"><a><%= link_to "Mascota", pets_path %> &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
       <li class="active"><a><%= link_to "Cita", appointments_path %> &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-
-        </ul>
+      <li class="active"><a><%= link_to 'Users', users_path %> &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+  <%= button_to 'Cerrar Session', logout_path, method: :delete   %>
+        <% end %>
+        
       </li>
     </ul>
 

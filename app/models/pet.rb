@@ -4,8 +4,8 @@ class Pet < ActiveRecord::Base
 
   validates :name, presence: true, length: {maximum: 35}
   validates :breed, presence: true
-  validates :pet_type, :inclusion => { :in => %w(gato perro pajaro),
-    :message => "El valor: %{value} No es valido! La mascota tiene que ser gato, perro, pajaro." }
+  #validates :pet_type, :inclusion => { :in => %w(gato perro pajaro),
+   # :message => "El valor: %{value} No es valido! La mascota tiene que ser gato, perro, pajaro." }
   validates :age, presence: true
   validates :weight, presence: true
   validates :last_appointment, presence: true

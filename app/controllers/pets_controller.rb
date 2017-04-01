@@ -1,5 +1,6 @@
 class PetsController < ApplicationController
   before_action :set_pet, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authorize, only: [:create, :update, :destroy]
 
   # GET /pets
   # GET /pets.json

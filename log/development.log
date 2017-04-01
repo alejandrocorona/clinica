@@ -21709,3 +21709,2745 @@ Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:12:08 -0600
             FROM sqlite_temp_master
             WHERE name='index_appointments_on_doctor_id' AND type='index'
 
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_appointments_on_pet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_appointments_on_pet_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_appointments_on_doctor_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_appointments_on_doctor_id' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 20:20:20 -0600
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1452.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1335.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3060.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20170325021748)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_appointments_on_pet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_appointments_on_pet_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_appointments_on_doctor_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_appointments_on_doctor_id' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 20:22:17 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (908.1ms)
+Completed 200 OK in 1039ms (Views: 1018.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:22:31 -0600
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 20:22:33 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"  ORDER BY "users"."name" ASC
+  Rendered users/index.html.erb within layouts/application (35.0ms)
+Completed 500 Internal Server Error in 222ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: users.name: SELECT "users".* FROM "users"  ORDER BY "users"."name" ASC):
+    11:   </thead>
+    12: 
+    13:   <tbody>
+    14:     <% @users.each do |user| %>
+    15:       <tr>
+    16:         <td><%= user.name %></td>
+    17:         <td><%= link_to 'Show', user %></td>
+  app/views/users/index.html.erb:14:in `_app_views_users_index_html_erb___161716699_55976412'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1480.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1421.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3214.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 20:24:51 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1435.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1387.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3147.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20170325022347)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (132.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (92.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateDoctors (20160302073407)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "doctors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "city" varchar, "state" varchar, "zip" integer, "certified_by" varchar, "experience" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160302073407"]]
+  [1m[35m (84.0ms)[0m  commit transaction
+Migrating to CreatePets (20160302074132)
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "pets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "breed" varchar, "type" varchar, "age" integer, "weight" integer, "last_appointment" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160302074132"]]
+  [1m[35m (90.0ms)[0m  commit transaction
+Migrating to CreateAppointments (20160302074414)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  CREATE TABLE "appointments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "pet_name" varchar, "doctor_name" varchar, "reason" text, "appointment_date" date, "doctor_id" integer, "pet_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mCREATE  INDEX "index_appointments_on_doctor_id" ON "appointments" ("doctor_id")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_appointments_on_doctor_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_appointments_on_doctor_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1mCREATE  INDEX "index_appointments_on_pet_id" ON "appointments" ("pet_id")[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160302074414"]]
+  [1m[36m (104.0ms)[0m  [1mcommit transaction[0m
+Migrating to RenamePetTypeColumn (20160302082223)
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (3.0ms)[0m  [1mCREATE TEMPORARY TABLE "apets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "breed" varchar, "pet_type" varchar, "age" integer, "weight" integer, "last_appointment" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  SELECT * FROM "pets"
+  [1m[36m (3.0ms)[0m  [1mDROP TABLE "pets"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "pets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "breed" varchar, "pet_type" varchar, "age" integer, "weight" integer, "last_appointment" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "apets"[0m
+  [1m[35m (3.0ms)[0m  DROP TABLE "apets"
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160302082223"]]
+  [1m[35m (111.0ms)[0m  commit transaction
+Migrating to ChangeLastAppointmentColumnTypeToDate (20160303041627)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "apets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "breed" varchar, "pet_type" varchar, "age" integer, "weight" integer, "last_appointment" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "pets"[0m
+  [1m[35m (3.0ms)[0m  DROP TABLE "pets"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "pets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "breed" varchar, "pet_type" varchar, "age" integer, "weight" integer, "last_appointment" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "apets"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "apets"[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160303041627"]]
+  [1m[36m (124.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsers (20170325022347)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170325022347"]]
+  [1m[36m (135.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_appointments_on_pet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_appointments_on_pet_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_appointments_on_doctor_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_appointments_on_doctor_id' AND type='index'
+
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 20:32:09 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"  ORDER BY "users"."name" ASC
+  Rendered users/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 1075ms (Views: 1049.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:32:24 -0600
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 20:32:52 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (64.0ms)
+  Rendered users/new.html.erb within layouts/application (96.0ms)
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x4a59ae8>:0x72d7388>
+Did you mean?  @user):
+    1: <div class="depot_form">
+    2:  
+    3: <%= form_with(model: user, local: true) do |form| %>
+    4:   <% if user.errors.any? %>
+    5:     <div id="error_explanation">
+    6:       <h2><%= pluralize(user.errors.count, "error") %>
+  app/views/users/_form.html.erb:3:in `_app_views_users__form_html_erb__228732555_59390052'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1026516427_60206076'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1462.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1343.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3092.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 20:34:32 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (53.0ms)
+  Rendered users/new.html.erb within layouts/application (79.0ms)
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x4a59ae8>:0x881bf68>
+Did you mean?  form_tag):
+    1: <div class="depot_form">
+    2:  
+    3: <%= form_with(model: @user, local: true) do |form| %>
+    4:   <% if user.errors.any? %>
+    5:     <div id="error_explanation">
+    6:       <h2><%= pluralize(user.errors.count, "error") %>
+  app/views/users/_form.html.erb:3:in `_app_views_users__form_html_erb__228732555_71354904'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1026516427_60206076'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1445.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1324.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3055.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 20:35:37 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (64.0ms)
+  Rendered users/new.html.erb within layouts/application (90.0ms)
+Completed 200 OK in 363ms (Views: 362.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:35:38 -0600
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 20:35:58 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."name" ASC[0m
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 272ms (Views: 268.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:35:58 -0600
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 20:36:01 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 274ms (Views: 272.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 20:37:23 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (60.0ms)
+  Rendered users/new.html.erb within layouts/application (85.0ms)
+Completed 500 Internal Server Error in 158ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x4a59ae8>:0x99ab078>
+Did you mean?  format
+               formats
+               form_tag
+               formats=
+               form_for
+               fork):
+    15:   <legend>Enter User Details</legend>
+    16:  
+    17:   <div class="field">
+    18:     <%= form.label :name, 'Name:' %>
+    19:     <%= form.text_field :name, size: 40 %>
+    20:   </div>
+    21:  
+  app/views/users/_form.html.erb:18:in `block in _app_views_users__form_html_erb__228732555_80560380'
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__228732555_80560380'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1026516427_60206076'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1419.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1336.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3076.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 20:37:51 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 283ms (Views: 282.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:37:52 -0600
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 20:38:43 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 308ms (Views: 307.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:38:44 -0600
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 20:39:16 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (65.0ms)
+  Rendered users/new.html.erb within layouts/application (90.0ms)
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x4a59ae8>:0xa430aa8>
+Did you mean?  format
+               formats
+               form_tag
+               formats=
+               form_for
+               fork):
+    14:   <legend>Enter User Details</legend>
+    15: 
+    16:   <div class="field">
+    17:        <%= form.label :name, 'Name:' %>
+    18:     <%= form.text_field :name, size: 40 %>
+    19:   </div>
+    20:   <div class="field">
+  app/views/users/_form.html.erb:17:in `block in _app_views_users__form_html_erb__228732555_86003196'
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__228732555_86003196'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1026516427_60206076'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1457.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1330.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3063.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 20:39:57 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.0ms)
+  Rendered users/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 294ms (Views: 292.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:39:58 -0600
+
+
+Started POST "/users" for 127.0.0.1 at 2017-03-24 20:40:12 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dwo0Rz5IoZ44XNL9HsTITKgXDYYJ4d9v9sMjHJL0Ano/e1unhnD3FrfAdYGQZmMAcyda+uHF/F46eejISrh1hg==", "user"=>{"name"=>"usuario", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'usuario' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "usuario"], ["password_digest", "$2a$10$1S7KFUUbV7Zl00wtA8/noeoF96N1N60BRsSplIuOY2TEoX934DioW"], ["created_at", "2017-03-25 02:40:13.176606"], ["updated_at", "2017-03-25 02:40:13.176606"]]
+  [1m[36m (190.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 387ms (ActiveRecord: 192.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 20:40:13 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"  ORDER BY "users"."name" ASC
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 278ms (Views: 276.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:40:14 -0600
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 20:44:03 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."name" ASC[0m
+  Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 3141ms (Views: 3135.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-24 20:44:07 -0600
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-24 20:44:07 -0600
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:44:07 -0600
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 20:46:04 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"  ORDER BY "users"."name" ASC
+  Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 319ms (Views: 310.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:46:04 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 20:46:06 -0600
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (202.8ms)
+Completed 200 OK in 287ms (Views: 287.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2017-03-24 20:46:08 -0600
+Processing by DoctorsController#index as HTML
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT "doctors".* FROM "doctors"[0m
+  Rendered doctors/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 273ms (Views: 263.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-03-24 20:46:10 -0600
+Processing by PetsController#index as HTML
+  [1m[35mPet Load (0.0ms)[0m  SELECT "pets".* FROM "pets"
+  Rendered pets/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 282ms (Views: 277.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-24 20:46:11 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.0ms)[0m  [1mSELECT "appointments".* FROM "appointments"[0m
+  Rendered appointments/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 269ms (Views: 257.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 20:46:57 -0600
+
+ActionController::RoutingError (No route matches [GET] "/login"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1922.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1324.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3066.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 20:48:21 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 277ms (Views: 276.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:48:22 -0600
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-03-24 20:48:25 -0600
+Processing by PetsController#index as HTML
+  [1m[35mPet Load (0.0ms)[0m  SELECT "pets".* FROM "pets"
+  Rendered pets/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 296ms (Views: 285.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2017-03-24 20:48:26 -0600
+Processing by DoctorsController#index as HTML
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT "doctors".* FROM "doctors"[0m
+  Rendered doctors/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 285ms (Views: 274.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 20:48:28 -0600
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (187.2ms)
+Completed 200 OK in 267ms (Views: 275.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-24 20:48:29 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[35mAppointment Load (0.0ms)[0m  SELECT "appointments".* FROM "appointments"
+  Rendered appointments/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 268ms (Views: 268.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 20:48:33 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 269ms (Views: 268.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:48:34 -0600
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 20:49:29 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 261ms (Views: 260.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:49:30 -0600
+
+
+Started POST "/sessions/new" for 127.0.0.1 at 2017-03-24 20:50:09 -0600
+
+ActionController::RoutingError (No route matches [POST] "/sessions/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1924.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1331.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3069.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-03-24 20:50:27 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 282ms (Views: 280.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:50:28 -0600
+
+
+Started POST "/sessions/new" for 127.0.0.1 at 2017-03-24 20:50:42 -0600
+
+ActionController::RoutingError (No route matches [POST] "/sessions/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1904.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1329.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3044.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 20:50:58 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 313ms (Views: 303.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:50:59 -0600
+
+
+Started POST "/users" for 127.0.0.1 at 2017-03-24 20:51:06 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iQsWdMdbq5Rx5k72gM8T+TMksOiZomyc706rC/MZhVrBenmUf2P9HP566YoObbi16BTnlHGGT60j9GDfK1Xypg==", "user"=>{"name"=>"123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = '123' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "123"], ["password_digest", "$2a$10$i7VmJlvGEaGidQdiVIrLJekdEKdL6tLbOJbDHfkZ2ttQF29YwhbaK"], ["created_at", "2017-03-25 02:51:06.440880"], ["updated_at", "2017-03-25 02:51:06.440880"]]
+  [1m[35m (118.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 221ms (ActiveRecord: 119.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 20:51:06 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."name" ASC[0m
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 259ms (Views: 258.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:51:07 -0600
+
+
+Started DELETE "/users/1" for 127.0.0.1 at 2017-03-24 20:51:12 -0600
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hkEna2rjMnnogxJDEtqnRI7s5MuztQmKhjBcn8RyRpzOMEiL0ttk8WcftT+ceAwIVdyzt1uRKrtKipdLHD4xYA==", "id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (87.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 133ms (ActiveRecord: 89.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 20:51:12 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"  ORDER BY "users"."name" ASC
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 278ms (Views: 276.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:51:12 -0600
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 20:51:17 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 268ms (Views: 267.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:51:17 -0600
+
+
+Started POST "/sessions/new" for 127.0.0.1 at 2017-03-24 20:51:21 -0600
+
+ActionController::RoutingError (No route matches [POST] "/sessions/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1914.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1373.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3154.2ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2017-03-24 20:52:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1934.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1324.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3065.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 20:53:04 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 281ms (Views: 280.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:53:05 -0600
+
+
+Started POST "/sessions/new" for 127.0.0.1 at 2017-03-24 20:53:10 -0600
+
+ActionController::RoutingError (No route matches [POST] "/sessions/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1913.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1331.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3061.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_appointments_on_pet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_appointments_on_pet_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_appointments_on_doctor_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_appointments_on_doctor_id' AND type='index'
+
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-03-24 20:53:53 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 285ms (Views: 284.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:53:53 -0600
+
+
+Started POST "/sessions/new" for 127.0.0.1 at 2017-03-24 20:53:59 -0600
+
+ActionController::RoutingError (No route matches [POST] "/sessions/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1919.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1359.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3112.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-03-24 20:55:00 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 271ms (Views: 269.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:55:01 -0600
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 20:55:06 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 301ms (Views: 299.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:55:06 -0600
+
+
+Started POST "/sessions/new" for 127.0.0.1 at 2017-03-24 20:55:12 -0600
+
+ActionController::RoutingError (No route matches [POST] "/sessions/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1897.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1459.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3256.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 20:56:45 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 288ms (Views: 286.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:56:46 -0600
+
+
+Started POST "/login" for 127.0.0.1 at 2017-03-24 20:56:51 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yU6CAA0VyZ/TYpBRR2UYm4UUr74gGlQDUxOVzI0PLAmBP+3gtS2fF1z+Ny3Jx7PXXiT4wsg+dzKfqV4YVUNb9Q==", "name"=>"123", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1[0m  [["name", "123"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 100ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-24 20:56:51 -0600
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 277ms (Views: 277.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 20:56:52 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 20:56:57 -0600
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (209.0ms)
+Completed 200 OK in 297ms (Views: 307.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-24 21:02:43 -0600
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 376ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `orders_path' for #<#<Class:0x8990790>:0x8761e48>):
+    22:     </ul>
+    23:         <% if session[:user_id] %>
+    24:           <ul>
+    25:             <li><%= link_to 'Orders',   orders_path   %></li>
+    26:             <li><%= link_to 'Products', products_path %></li>
+    27:             <li><%= link_to 'Users',    users_path    %></li>
+    28:           </ul>
+  app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb__890168990_63700848'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1450.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1319.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3039.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-24 21:04:16 -0600
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 280ms (Views: 277.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 21:04:17 -0600
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-03-24 21:04:21 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9lEicLqFwFYkAWrGEZu84MUpTlkT26rAgoKbIyV4Bm++IE2QAr2W3qudzbqfOResHhkZJfv/ifFOOFD3/TRxkw=="}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `store_index_url' for #<SessionsController:0x926ba70>):
+  app/controllers/sessions_controller.rb:18:in `destroy'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1430.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1314.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3026.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-24 21:06:20 -0600
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 254ms (Views: 251.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 21:06:21 -0600
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-24 21:07:09 -0600
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 280ms (Views: 278.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 21:07:09 -0600
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-03-24 21:07:25 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tpMW3xIWp3bZkC3Y/Vbl5TzzvejgYm1tp3F1Q+SCXq7+4nk/qi7x/lYMiqRz9E6p58PqlAhGTlxry76XPM4pUg=="}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `store_index_url' for #<SessionsController:0x6d0c920>):
+  app/controllers/sessions_controller.rb:18:in `destroy'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1427.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1348.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3086.2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-03-24 21:08:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1911.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1317.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3026.2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-03-24 21:09:12 -0600
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1906.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1315.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3039.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 21:09:33 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (214.0ms)
+Completed 200 OK in 323ms (Views: 309.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 21:09:33 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 21:10:12 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (229.0ms)
+Completed 200 OK in 333ms (Views: 319.6ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-03-24 21:10:15 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ynm1XNEhuqjKC7yICRyaaon4NY4ECa/vZQsZPX+CtlUqCNq8aRnsIEWXG/SHvjEmUshi8uwtjN6psdLpp87BqQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 21:10:15 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 21:10:15 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 281ms (Views: 279.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 21:10:28 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 21:10:28 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 308ms (Views: 307.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 21:10:31 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:10:35 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 21:10:35 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 277ms (Views: 276.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-03-24 21:10:41 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kwfAf9RJdO86/c47zzghB1Ux3VdpO5oWXs1570P0gdbbdq+fbHEiZ7VhaUdBmopLjgGKK4EfuSeSd7I7m7j2Kg==", "name"=>"123", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "123"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 92ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-24 21:10:41 -0600
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 291ms (Views: 288.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 21:10:45 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."name" ASC[0m
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 282ms (Views: 269.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 21:12:30 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."name" ASC[0m
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 281ms (Views: 278.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-03-24 21:12:34 -0600
+Processing by PetsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPet Load (1.0ms)[0m  [1mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 281ms (Views: 271.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-24 21:12:36 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mAppointment Load (1.0ms)[0m  [1mSELECT "appointments".* FROM "appointments"[0m
+  Rendered appointments/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 280ms (Views: 272.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 21:12:37 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."name" ASC[0m
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 278ms (Views: 275.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2017-03-24 21:12:38 -0600
+Processing by DoctorsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT "doctors".* FROM "doctors"[0m
+  Rendered doctors/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 277ms (Views: 268.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 21:12:41 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (191.0ms)
+Completed 200 OK in 278ms (Views: 276.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-03-24 21:12:49 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9Qhi4moBgE5oIf4wdn8MVNmaC8EsG+jul//WjkeQXpu9eQ0C0jnWxue9WUz43acYAqpcvcQ/y99bRR1an9wpZw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 21:12:49 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 21:12:49 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 278ms (Views: 277.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-03-24 21:13:03 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZTSi+rAFGMDQcJICmz7J4P7jMpoe31Y0jwdIskqIliMtRc0aCD1OSF/sNX4VnGKsJdNl5vb7dQVDvYNmksTh3w==", "name"=>"123", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "123"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 92ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-24 21:13:03 -0600
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered admin/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 273ms (Views: 271.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 21:13:06 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (202.2ms)
+Completed 200 OK in 295ms (Views: 293.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 21:13:11 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"  ORDER BY "users"."name" ASC
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 250ms (Views: 257.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:13:13 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/_form.html.erb (4.0ms)
+  Rendered users/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 307ms (Views: 304.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:15:54 -0600
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/_form.html.erb (25.0ms)
+  Rendered users/new.html.erb within layouts/application (50.0ms)
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 0.0ms)
+
+SyntaxError (c:/Users/ACP/Desktop/cl/app/views/users/_form.html.erb:35: syntax error, unexpected keyword_ensure, expecting keyword_end
+c:/Users/ACP/Desktop/cl/app/views/users/_form.html.erb:37: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/_form.html.erb:35: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/_form.html.erb:37: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1026516427_60206076'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1425.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1345.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3136.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:16:49 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 299ms (Views: 297.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:17:24 -0600
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 315ms (Views: 312.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:18:13 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (26.0ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+SyntaxError (c:/Users/ACP/Desktop/cl/app/views/users/_form.html.erb:33: syntax error, unexpected tSTRING_BEG, expecting '('
+...put_buffer.append=( f.submit. 'registrar' );@output_buffer.s...
+...                               ^):
+  app/views/users/_form.html.erb:33: syntax error, unexpected tSTRING_BEG, expecting '('
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1026516427_82418748'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1428.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1361.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3090.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:18:40 -0600
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/_form.html.erb (1.0ms)
+  Rendered users/new.html.erb within layouts/application (28.0ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+SyntaxError (c:/Users/ACP/Desktop/cl/app/views/users/_form.html.erb:33: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...ffer.append=( f.submit, 'Reg' );@output_buffer.safe_append='
+...                               ^
+c:/Users/ACP/Desktop/cl/app/views/users/_form.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+c:/Users/ACP/Desktop/cl/app/views/users/_form.html.erb:38: syntax error, unexpected keyword_ensure, expecting ')'
+c:/Users/ACP/Desktop/cl/app/views/users/_form.html.erb:40: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/users/_form.html.erb:33: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+  app/views/users/_form.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+  app/views/users/_form.html.erb:38: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/users/_form.html.erb:40: syntax error, unexpected keyword_end, expecting ')'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1026516427_82418748'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1445.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1327.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3094.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:19:09 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 317ms (Views: 314.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-03-24 21:19:22 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CLcuUHWoC/UGWKA8gKBhUa4m0r1+ijCM/xCz8DWqaYVAxkGwzZBdfYnEB0AOAsoddRaFwZauE70zqngk7eYeeQ==", "user"=>{"name"=>"acp", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"reg"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'acp' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "acp"], ["password_digest", "$2a$10$ZMxeuqJwMHo8AOV3Yl49SObB8j8eJTDNIMllXP401mEN3mZB0L3Bq"], ["created_at", "2017-03-25 03:19:23.146730"], ["updated_at", "2017-03-25 03:19:23.146730"]]
+  [1m[35m (93.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 197ms (ActiveRecord: 94.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 21:19:23 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"  ORDER BY "users"."name" ASC
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 273ms (Views: 269.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:20:39 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 373ms (Views: 370.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:21:01 -0600
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 291ms (Views: 288.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:21:23 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 282ms (Views: 279.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:21:42 -0600
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 302ms (Views: 299.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:21:55 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 303ms (Views: 300.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:22:29 -0600
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (29.0ms)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.0ms)
+
+SyntaxError (c:/Users/ACP/Desktop/cl/app/views/users/_form.html.erb:29: syntax error, unexpected ')'
+...word_confirmation, size: 28,  );@output_buffer.safe_append='
+...                               ^
+c:/Users/ACP/Desktop/cl/app/views/users/_form.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+c:/Users/ACP/Desktop/cl/app/views/users/_form.html.erb:38: syntax error, unexpected keyword_ensure, expecting ')'
+c:/Users/ACP/Desktop/cl/app/views/users/_form.html.erb:40: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/users/_form.html.erb:29: syntax error, unexpected ')'
+  app/views/users/_form.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+  app/views/users/_form.html.erb:38: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/users/_form.html.erb:40: syntax error, unexpected keyword_end, expecting ')'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1026516427_82418748'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (2065.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1346.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3150.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-03-24 21:22:54 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/_form.html.erb (5.0ms)
+  Rendered users/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 314ms (Views: 311.5ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-03-24 21:22:57 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/6wScxRvaSK3N3d6DPSAo8NUmoS7w+1t/Whzjg/nKOG33X2TrFc/qjir0AaCVivvGGTN+FPnzlwx0rha16tfHQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 21:22:57 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 21:22:57 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 269ms (Views: 269.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 21:24:10 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 299ms (Views: 298.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-03-24 21:24:15 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sLZL2QEjNWXsrma1n7sKzLbEt76f6QOj4SRc7DCX2zP4xyQ5uRtj7WMywckRGaGAbfTgwnfNIJItnpc46Nuszw==", "name"=>"123", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1[0m  [["name", "123"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 100ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-24 21:24:15 -0600
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 438ms (Views: 436.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 21:24:19 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (262.4ms)
+Completed 200 OK in 359ms (Views: 350.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2017-03-24 21:24:22 -0600
+Processing by DoctorsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT "doctors".* FROM "doctors"[0m
+  Rendered doctors/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 289ms (Views: 287.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/new" for 127.0.0.1 at 2017-03-24 21:24:25 -0600
+Processing by DoctorsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered doctors/_form.html.erb (13.0ms)
+  Rendered doctors/new.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 431ms (Views: 418.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/doctors" for 127.0.0.1 at 2017-03-24 21:25:04 -0600
+Processing by DoctorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZcbU/Q0BnlCYtA04AcyeBaBPQkCTQkL3EWTtxBWC4Ygtt7sdtTnI2BcoqkSPbjVJe38VPHtmYcbd3iYQzc6WdA==", "doctor"=>{"name"=>"Juan", "address"=>"Zacatecas", "city"=>"Jalpa", "state"=>"Jalpa", "zip"=>"99999", "certified_by"=>"ut", "experience"=>"7"}, "commit"=>"Create Doctor"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (30.0ms)[0m  INSERT INTO "doctors" ("name", "address", "city", "state", "zip", "certified_by", "experience", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Juan"], ["address", "Zacatecas"], ["city", "Jalpa"], ["state", "Jalpa"], ["zip", 99999], ["certified_by", "ut"], ["experience", 7], ["created_at", "2017-03-25 03:25:04.695497"], ["updated_at", "2017-03-25 03:25:04.695497"]]
+  [1m[36m (185.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/doctors/1
+Completed 302 Found in 226ms (ActiveRecord: 215.0ms)
+
+
+Started GET "/doctors/1" for 127.0.0.1 at 2017-03-24 21:25:04 -0600
+Processing by DoctorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered doctors/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 330ms (Views: 325.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2017-03-24 21:25:09 -0600
+Processing by DoctorsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT "doctors".* FROM "doctors"[0m
+  Rendered doctors/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 388ms (Views: 385.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-03-24 21:25:10 -0600
+Processing by PetsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPet Load (1.0ms)[0m  [1mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 287ms (Views: 283.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-03-24 21:25:14 -0600
+Processing by PetsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered pets/_form.html.erb (49.0ms)
+  Rendered pets/new.html.erb within layouts/application (97.0ms)
+Completed 200 OK in 418ms (Views: 408.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-03-24 21:28:29 -0600
+Processing by PetsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.0ms)
+
+SyntaxError (c:/Users/ACP/Desktop/cl/app/models/pet.rb:12: syntax error, unexpected ',', expecting =>
+Pet.create(name: "perro", "gato", "pajaro").valid? # => true
+                                 ^
+c:/Users/ACP/Desktop/cl/app/models/pet.rb:12: syntax error, unexpected ')', expecting end-of-input
+Pet.create(name: "perro", "gato", "pajaro").valid? # => true
+                                           ^):
+  app/models/pet.rb:12: syntax error, unexpected ',', expecting =>
+  app/models/pet.rb:12: syntax error, unexpected ')', expecting end-of-input
+  app/controllers/pets_controller.rb:18:in `new'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1450.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1384.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3130.2ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-03-24 21:28:53 -0600
+Processing by PetsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.0ms)
+
+SyntaxError (c:/Users/ACP/Desktop/cl/app/models/pet.rb:21: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/models/pet.rb:21: syntax error, unexpected keyword_end, expecting end-of-input
+  app/controllers/pets_controller.rb:18:in `new'
+
+
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1421.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1328.1ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (3086.2ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-03-24 21:29:22 -0600
+Processing by PetsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pets/_form.html.erb (6.0ms)
+  Rendered pets/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 360ms (Views: 333.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 21:29:23 -0600
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-03-24 21:29:48 -0600
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UN9ieGbiGdtxDuUTFpCXk/cvkVeGkf7QKqkzYTMJ8TMYrg2Y3tpPU/6SQm+YMjzfLB/GK2613eHmE/i160WGzw==", "pet"=>{"name"=>"Oso", "breed"=>"Pitbull", "pet_type"=>"Perro", "age"=>"3", "weight"=>"4", "last_appointment(1i)"=>"2017", "last_appointment(2i)"=>"3", "last_appointment(3i)"=>"25"}, "commit"=>"Create Pet"}
+Unpermitted parameter: pet_type
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "pets" ("name", "breed", "age", "weight", "last_appointment", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Oso"], ["breed", "Pitbull"], ["age", 3], ["weight", 4], ["last_appointment", "2017-03-25"], ["created_at", "2017-03-25 03:29:48.593704"], ["updated_at", "2017-03-25 03:29:48.593704"]]
+  [1m[35m (74.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/pets/1
+Completed 302 Found in 108ms (ActiveRecord: 75.0ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-03-24 21:29:48 -0600
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPet Load (1.0ms)[0m  SELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pets/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 276ms (Views: 272.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 21:29:49 -0600
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-03-24 21:29:51 -0600
+Processing by PetsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPet Load (0.0ms)[0m  SELECT "pets".* FROM "pets"
+  Rendered pets/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 271ms (Views: 269.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-24 21:29:54 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAppointment Load (1.0ms)[0m  SELECT "appointments".* FROM "appointments"
+  Rendered appointments/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 274ms (Views: 265.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/appointments/new" for 127.0.0.1 at 2017-03-24 21:29:56 -0600
+Processing by AppointmentsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPet Load (1.0ms)[0m  SELECT "pets".* FROM "pets"  ORDER BY "pets"."name" ASC
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT "doctors".* FROM "doctors"  ORDER BY "doctors"."name" ASC[0m
+  Rendered appointments/_form.html.erb (74.0ms)
+  Rendered appointments/new.html.erb within layouts/application (122.0ms)
+Completed 200 OK in 422ms (Views: 411.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-03-24 21:30:13 -0600
+Processing by AppointmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"REoiOkuqWbi9FfuzuN0jU5U/TAL+jAG6yLvg9m3sO6YMO03a85IPMDKJXM82f4gfTg8bfhaoIosEASsitaBMWg==", "appointment"=>{"pet_id"=>"1", "doctor_id"=>"1", "reason"=>"Enfermo", "appointment_date(1i)"=>"2017", "appointment_date(2i)"=>"3", "appointment_date(3i)"=>"25"}, "commit"=>"Create Appointment"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "appointments" ("reason", "doctor_id", "pet_id", "appointment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["reason", "Enfermo"], ["doctor_id", 1], ["pet_id", 1], ["appointment_date", "2017-03-25"], ["created_at", "2017-03-25 03:30:13.515989"], ["updated_at", "2017-03-25 03:30:13.515989"]]
+  [1m[35m (120.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/appointments/1
+Completed 302 Found in 139ms (ActiveRecord: 122.0ms)
+
+
+Started GET "/appointments/1" for 127.0.0.1 at 2017-03-24 21:30:13 -0600
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAppointment Load (1.0ms)[0m  SELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered appointments/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 288ms (Views: 281.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 21:30:14 -0600
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-24 21:30:18 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAppointment Load (0.0ms)[0m  SELECT "appointments".* FROM "appointments"
+  [1m[36mPet Load (1.0ms)[0m  [1mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDoctor Load (1.0ms)[0m  SELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered appointments/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 286ms (Views: 281.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-24 21:30:59 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAppointment Load (0.0ms)[0m  SELECT "appointments".* FROM "appointments"
+  [1m[36mPet Load (0.0ms)[0m  [1mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDoctor Load (0.0ms)[0m  SELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered appointments/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 287ms (Views: 284.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 21:31:00 -0600
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-24 21:32:31 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAppointment Load (0.0ms)[0m  SELECT "appointments".* FROM "appointments"
+  [1m[36mPet Load (0.0ms)[0m  [1mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDoctor Load (1.0ms)[0m  SELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered appointments/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 289ms (Views: 285.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 21:32:32 -0600
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-24 21:32:58 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAppointment Load (1.0ms)[0m  SELECT "appointments".* FROM "appointments"
+  [1m[36mPet Load (0.0ms)[0m  [1mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDoctor Load (1.0ms)[0m  SELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered appointments/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 285ms (Views: 279.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 21:32:59 -0600
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-24 21:35:11 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAppointment Load (0.0ms)[0m  SELECT "appointments".* FROM "appointments"
+  [1m[36mPet Load (1.0ms)[0m  [1mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDoctor Load (0.0ms)[0m  SELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered appointments/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 283ms (Views: 279.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 21:35:12 -0600
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 21:35:14 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"  ORDER BY "users"."name" ASC
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 306ms (Views: 303.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-24 21:35:16 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAppointment Load (0.0ms)[0m  SELECT "appointments".* FROM "appointments"
+  [1m[36mPet Load (0.0ms)[0m  [1mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDoctor Load (1.0ms)[0m  SELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered appointments/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 269ms (Views: 266.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-24 21:35:17 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"  ORDER BY "users"."name" ASC
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 302ms (Views: 300.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-03-24 21:36:01 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uxoI72xGOd+zJddxTOVMKtEdK8PVBd/PucObE3zXztTza2cP1H5vVzy5cA3CR+dmCi18vz0h/P51eVDHpJu5KA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-24 21:36:01 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-24 21:36:01 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 298ms (Views: 297.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-24 21:36:02 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-31 19:46:18 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 167ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-31 19:46:27 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 10689ms (Views: 10688.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:38 -0600
+
+
+Started GET "/assets/metro-bootstrap.min.self-9c45c5af46c66b60174ed00c47905a6221c257f4a0b9e96202a626d40fc73cd3.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:38 -0600
+
+
+Started GET "/assets/doctors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:38 -0600
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:38 -0600
+
+
+Started GET "/assets/metro-bootstrap.self-22f2f559236aba6d86f8530439ccbaa41ec1c7d0e3d3815386d9c3306d81201b.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:38 -0600
+
+
+Started GET "/assets/pets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:39 -0600
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:39 -0600
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:39 -0600
+
+
+Started GET "/assets/scaffolds.self-363e99f36d7741f9932b14505029e4288aa2b05583b7defc7f272a677210854a.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:39 -0600
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:39 -0600
+
+
+Started GET "/assets/application.self-ec2aca158ec63cb9d390cb25689f68c6d31bb8c6ae573863bd0e911a8ed45442.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:39 -0600
+
+
+Started GET "/assets/owl.carousel.self-8bdce040286fb9b851d53a7af378ae135e1ef93e85f6d1082630d6729cf59337.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:39 -0600
+
+
+Started GET "/assets/owl.theme.self-99f17f686c3688674da27273015b38595e327678fc04f0ae0740f12c1fda0e53.css?body=1" for 127.0.0.1 at 2017-03-31 19:46:39 -0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2017-03-31 19:46:39 -0600
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-31 19:46:39 -0600
+
+
+Started GET "/assets/appointments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-31 19:46:39 -0600
+
+
+Started GET "/assets/doctors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-31 19:46:40 -0600
+
+
+Started GET "/assets/pets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-31 19:46:40 -0600
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-31 19:46:40 -0600
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-31 19:46:40 -0600
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-31 19:46:40 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-03-31 19:46:40 -0600
+
+
+Started GET "/assets/hero-01.jpg" for 127.0.0.1 at 2017-03-31 19:46:40 -0600
+
+
+Started POST "/login" for 127.0.0.1 at 2017-03-31 19:47:15 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"epExXcr9PkPlgkEoSFZ27/HMf/buWjDOsaFguMaHkRoB2vP7Wpsd6mLej+kH8cFSyprkiAUkwX9oaFhfEW95AQ==", "name"=>"alex", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1[0m  [["name", "alex"]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 115ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-31 19:47:15 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 331ms (Views: 330.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-03-31 19:47:25 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c++A7DS1lc0TO+y62a6+KQkxPZCstf8dypFmfFW94JMIpEJKpNO2ZJRnInuWCQmUMmem7kfLDqwTWF6bglUIiA==", "name"=>"usuario", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "usuario"]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-31 19:47:25 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 261ms (Views: 259.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-03-31 19:47:35 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EhbajOqz5g9foOLoN/7Tz+wjTNesxY8cB+lFE53fOpBpXRgqetXFptj8LCl4WWRy13XXqUe7fq3eIH30SjfSiw==", "name"=>"alejandro", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1[0m  [["name", "alejandro"]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-31 19:47:35 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 914ms (Views: 913.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-03-31 19:47:43 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LebUBY+FLvYh5YgEUrt0hwT3dZij/tvoamr9CEl5049WrRajH+MNX6a5RsUdHMM6P6Hu5kiAKlmzo8XvnpE7lA==", "name"=>"acp", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "acp"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 158ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-31 19:47:44 -0600
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered admin/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 339ms (Views: 332.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-31 19:47:51 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered welcome/index.html.erb within layouts/application (1517.1ms)
+Completed 200 OK in 1742ms (Views: 1739.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo-white-383ba1cdac5cda6776842f343977c9bfabb56f19695d865b75713d086ce5f841.png" for 127.0.0.1 at 2017-03-31 19:47:53 -0600
+
+
+Started GET "/doctors" for 127.0.0.1 at 2017-03-31 19:47:56 -0600
+Processing by DoctorsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mDoctor Load (0.0ms)[0m  SELECT "doctors".* FROM "doctors"
+  Rendered doctors/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 534ms (Views: 474.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-03-31 19:47:59 -0600
+Processing by PetsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mPet Load (1.0ms)[0m  SELECT "pets".* FROM "pets"
+  Rendered pets/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 436ms (Views: 423.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-31 19:48:02 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mAppointment Load (0.0ms)[0m  SELECT "appointments".* FROM "appointments"
+  [1m[36mPet Load (1.0ms)[0m  [1mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDoctor Load (1.0ms)[0m  SELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered appointments/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 558ms (Views: 515.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-31 19:48:04 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"  ORDER BY "users"."name" ASC
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 472ms (Views: 469.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-03-31 19:48:09 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Fb75MmtOi7MAQ7Sb16+lhGmF39zr1FapnUY5nm2B9F1u9TuU+yioGocfelqYCBI5UtNEogCqpxhEjwF5umkcRg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-31 19:48:10 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-31 19:48:10 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 270ms (Views: 269.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-03-31 19:52:24 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YCADAMJeXP4O436MUQ/1LiJ4P7Tu4aljKaupmdVbyKYba8GmUjh/V4m/sE0eqEKTGS6kygWfWNLwYpF+ArMgvQ==", "name"=>"acp", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "acp"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 94ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-31 19:52:24 -0600
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered admin/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 318ms (Views: 313.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-31 19:52:27 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAppointment Load (0.0ms)[0m  [1mSELECT "appointments".* FROM "appointments"[0m
+  [1m[35mPet Load (0.0ms)[0m  SELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered appointments/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 256ms (Views: 254.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/appointments/new" for 127.0.0.1 at 2017-03-31 19:52:29 -0600
+Processing by AppointmentsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mPet Load (0.0ms)[0m  [1mSELECT "pets".* FROM "pets"  ORDER BY "pets"."name" ASC[0m
+  [1m[35mDoctor Load (0.0ms)[0m  SELECT "doctors".* FROM "doctors"  ORDER BY "doctors"."name" ASC
+  Rendered appointments/_form.html.erb (181.0ms)
+  Rendered appointments/new.html.erb within layouts/application (254.0ms)
+Completed 200 OK in 531ms (Views: 528.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-03-31 19:52:44 -0600
+Processing by AppointmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ma5Uu0gdVAWB2ztL0F1N4OLu7eQZhbbT7mND8GChZUtK5ZYd2Ht3rAaH9Yqf+vpd2bh2mvL7R2I3qnsXt0mNUA==", "appointment"=>{"pet_id"=>"1", "doctor_id"=>"1", "reason"=>"Atropello", "appointment_date(1i)"=>"2017", "appointment_date(2i)"=>"4", "appointment_date(3i)"=>"1"}, "commit"=>"Aceptar"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (30.0ms)[0m  INSERT INTO "appointments" ("reason", "doctor_id", "pet_id", "appointment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["reason", "Atropello"], ["doctor_id", 1], ["pet_id", 1], ["appointment_date", "2017-04-01"], ["created_at", "2017-04-01 01:52:44.808155"], ["updated_at", "2017-04-01 01:52:44.808155"]]
+  [1m[36m (191.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/appointments/2
+Completed 302 Found in 232ms (ActiveRecord: 221.0ms)
+
+
+Started GET "/appointments/2" for 127.0.0.1 at 2017-03-31 19:52:45 -0600
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAppointment Load (1.0ms)[0m  [1mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered appointments/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 292ms (Views: 288.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-31 19:52:48 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAppointment Load (0.0ms)[0m  [1mSELECT "appointments".* FROM "appointments"[0m
+  [1m[35mPet Load (0.0ms)[0m  SELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered appointments/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 273ms (Views: 271.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/appointments/2" for 127.0.0.1 at 2017-03-31 19:52:54 -0600
+Processing by AppointmentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BRLqSyY0QK9SCTL35c9BQWxOBqZKwtX909ZF7DIkQyZ+WSjttlJjBtVV/DaqaPb8Vxid2KG8JEwKH30L5cyrPQ==", "id"=>"2"}
+  [1m[35mAppointment Load (0.0ms)[0m  SELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (21.0ms)[0m  DELETE FROM "appointments" WHERE "appointments"."id" = ?  [["id", 2]]
+  [1m[36m (112.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/appointments
+Completed 302 Found in 142ms (ActiveRecord: 133.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-31 19:52:54 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAppointment Load (0.0ms)[0m  [1mSELECT "appointments".* FROM "appointments"[0m
+  [1m[35mPet Load (0.0ms)[0m  SELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered appointments/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 294ms (Views: 292.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/appointments/1" for 127.0.0.1 at 2017-03-31 19:52:59 -0600
+Processing by AppointmentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DXLKEu2JLaqtOBsvtbtBpXTuZiVG8n98dsk/ABY7iQN2OQi0fe8OAypk1e76HPYYT7j9W62Mjs2vAAfnwdNhGA==", "id"=>"1"}
+  [1m[35mAppointment Load (0.0ms)[0m  SELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "appointments" WHERE "appointments"."id" = ?  [["id", 1]]
+  [1m[36m (117.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/appointments
+Completed 302 Found in 123ms (ActiveRecord: 118.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-31 19:52:59 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAppointment Load (0.0ms)[0m  [1mSELECT "appointments".* FROM "appointments"[0m
+  Rendered appointments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 274ms (Views: 271.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-03-31 19:53:01 -0600
+Processing by PetsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mPet Load (1.0ms)[0m  [1mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 257ms (Views: 254.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-03-31 19:53:08 -0600
+Processing by PetsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered pets/_form.html.erb (30.0ms)
+  Rendered pets/new.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 465ms (Views: 461.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-03-31 19:53:54 -0600
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"axIGFmzCXtdgJaq+ZXMb1yYCvzj9TsDb3LbaqYn66o8QWcSw/KR9fud5ZH8q1KxqHVQkRhYwMWoFf+JOXhIClA==", "pet"=>{"name"=>"Pulgoso", "breed"=>"Salchicha", "pet_type"=>"Perro", "age"=>"4", "weight"=>"53", "last_appointment(1i)"=>"2017", "last_appointment(2i)"=>"4", "last_appointment(3i)"=>"1"}, "commit"=>"Aceptar"}
+Unpermitted parameter: pet_type
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "pets" ("name", "breed", "age", "weight", "last_appointment", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Pulgoso"], ["breed", "Salchicha"], ["age", 4], ["weight", 53], ["last_appointment", "2017-04-01"], ["created_at", "2017-04-01 01:53:54.107118"], ["updated_at", "2017-04-01 01:53:54.107118"]]
+  [1m[36m (95.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pets/2
+Completed 302 Found in 109ms (ActiveRecord: 96.0ms)
+
+
+Started GET "/pets/2" for 127.0.0.1 at 2017-03-31 19:53:54 -0600
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mPet Load (0.0ms)[0m  [1mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pets/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 262ms (Views: 257.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-03-31 19:53:56 -0600
+Processing by PetsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mPet Load (0.0ms)[0m  [1mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 256ms (Views: 253.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2017-03-31 19:54:01 -0600
+Processing by DoctorsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT "doctors".* FROM "doctors"[0m
+  Rendered doctors/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 274ms (Views: 271.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/new" for 127.0.0.1 at 2017-03-31 19:54:08 -0600
+Processing by DoctorsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered doctors/_form.html.erb (6.0ms)
+  Rendered doctors/new.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 455ms (Views: 452.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/doctors" for 127.0.0.1 at 2017-03-31 19:54:57 -0600
+Processing by DoctorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iAJF10TwaWHXPkumhdC4J5x9eLhtxb73opxeon9QTefzSYdx1JZKyFBihWfKdw+apyvjxoa7T0Z7VWZFqLil/A==", "doctor"=>{"name"=>"Jorge", "address"=>"Privada 1", "city"=>"Mexico", "state"=>"Guanajuato", "zip"=>"37800", "certified_by"=>"Clinica Canina C.V", "experience"=>"5"}, "commit"=>"Aceptar"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "doctors" ("name", "address", "city", "state", "zip", "certified_by", "experience", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Jorge"], ["address", "Privada 1"], ["city", "Mexico"], ["state", "Guanajuato"], ["zip", 37800], ["certified_by", "Clinica Canina C.V"], ["experience", 5], ["created_at", "2017-04-01 01:54:57.373737"], ["updated_at", "2017-04-01 01:54:57.373737"]]
+  [1m[36m (106.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/doctors/2
+Completed 302 Found in 116ms (ActiveRecord: 107.0ms)
+
+
+Started GET "/doctors/2" for 127.0.0.1 at 2017-03-31 19:54:57 -0600
+Processing by DoctorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered doctors/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 273ms (Views: 269.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2017-03-31 19:55:00 -0600
+Processing by DoctorsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT "doctors".* FROM "doctors"[0m
+  Rendered doctors/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 322ms (Views: 319.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-31 19:55:04 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered welcome/index.html.erb within layouts/application (256.0ms)
+Completed 200 OK in 353ms (Views: 351.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-31 19:55:11 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered welcome/index.html.erb within layouts/application (195.0ms)
+Completed 200 OK in 286ms (Views: 283.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2017-03-31 19:55:12 -0600
+Processing by DoctorsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT "doctors".* FROM "doctors"[0m
+  Rendered doctors/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 276ms (Views: 273.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-03-31 19:55:13 -0600
+Processing by PetsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mPet Load (1.0ms)[0m  [1mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 311ms (Views: 308.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-31 19:55:16 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAppointment Load (0.0ms)[0m  [1mSELECT "appointments".* FROM "appointments"[0m
+  Rendered appointments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 255ms (Views: 253.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-31 19:55:20 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."name" ASC[0m
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 296ms (Views: 292.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-31 19:55:27 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered welcome/index.html.erb within layouts/application (213.0ms)
+Completed 200 OK in 303ms (Views: 301.7ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-03-31 19:55:45 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6PkB/vnp6QLZb9M1tCiunyIjxLooehf2ykhBjzUzkC2TssNYaY/Kq14zHfT7jxkiGXVfxMME5kcTgXlo4tt4Ng=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-31 19:55:45 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-31 19:55:45 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 287ms (Views: 286.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-03-31 19:57:11 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dO3o1KTMaGuz0e8ggJvUuDQlIkS1WGZzsfSJkoNZ1BsPpipyNKpLwjSNIeHPPGMFD3O5Ol4ml8JoPbF1VLE8AA==", "name"=>"acp", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "acp"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 93ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-31 19:57:11 -0600
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 304ms (Views: 301.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2017-03-31 19:57:17 -0600
+Processing by DoctorsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT "doctors".* FROM "doctors"[0m
+  Rendered doctors/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 284ms (Views: 281.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-03-31 19:57:22 -0600
+Processing by PetsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mPet Load (0.0ms)[0m  [1mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 270ms (Views: 266.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-03-31 19:57:25 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."name" ASC[0m
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 289ms (Views: 285.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-31 19:57:28 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAppointment Load (1.0ms)[0m  [1mSELECT "appointments".* FROM "appointments"[0m
+  Rendered appointments/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 264ms (Views: 261.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/appointments/new" for 127.0.0.1 at 2017-03-31 19:57:34 -0600
+Processing by AppointmentsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mPet Load (0.0ms)[0m  [1mSELECT "pets".* FROM "pets"  ORDER BY "pets"."name" ASC[0m
+  [1m[35mDoctor Load (1.0ms)[0m  SELECT "doctors".* FROM "doctors"  ORDER BY "doctors"."name" ASC
+  Rendered appointments/_form.html.erb (12.0ms)
+  Rendered appointments/new.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 382ms (Views: 378.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-03-31 19:57:56 -0600
+Processing by AppointmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gBCd2T0kr/Kk/V8I0UkMfBSz1gOm9Ih1XG8x6wzatb/7W19/rUKMWyOhkcme7rvBL+VNfU2KecSFpgkM2zJdpA==", "appointment"=>{"pet_id"=>"2", "doctor_id"=>"2", "reason"=>"Enfermo", "appointment_date(1i)"=>"2017", "appointment_date(2i)"=>"4", "appointment_date(3i)"=>"1"}, "commit"=>"Aceptar"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "appointments" ("reason", "doctor_id", "pet_id", "appointment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["reason", "Enfermo"], ["doctor_id", 2], ["pet_id", 2], ["appointment_date", "2017-04-01"], ["created_at", "2017-04-01 01:57:56.546985"], ["updated_at", "2017-04-01 01:57:56.546985"]]
+  [1m[36m (114.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/appointments/3
+Completed 302 Found in 126ms (ActiveRecord: 115.0ms)
+
+
+Started GET "/appointments/3" for 127.0.0.1 at 2017-03-31 19:57:56 -0600
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAppointment Load (0.0ms)[0m  [1mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered appointments/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 319ms (Views: 313.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-31 19:58:00 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAppointment Load (0.0ms)[0m  [1mSELECT "appointments".* FROM "appointments"[0m
+  [1m[35mPet Load (1.0ms)[0m  SELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered appointments/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 279ms (Views: 275.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/appointments/3/edit" for 127.0.0.1 at 2017-03-31 19:58:22 -0600
+Processing by AppointmentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAppointment Load (0.0ms)[0m  [1mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mPet Load (1.0ms)[0m  SELECT "pets".* FROM "pets"  ORDER BY "pets"."name" ASC
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT "doctors".* FROM "doctors"  ORDER BY "doctors"."name" ASC[0m
+  Rendered appointments/_form.html.erb (8.0ms)
+  Rendered appointments/edit.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 324ms (Views: 317.1ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/appointments/3" for 127.0.0.1 at 2017-03-31 19:58:36 -0600
+Processing by AppointmentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UmAps6KXCz32JatXSWuZTU7RsSuJA50ZsSyrAj3sf3kpK+sVMvEolHF5ZZYGzC7wdYcqVWJ9bKho5ZPl6gSXYg==", "appointment"=>{"pet_id"=>"1", "doctor_id"=>"2", "reason"=>"Enfermo", "appointment_date(1i)"=>"2017", "appointment_date(2i)"=>"4", "appointment_date(3i)"=>"1"}, "commit"=>"Aceptar", "id"=>"3"}
+  [1m[35mAppointment Load (0.0ms)[0m  SELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  UPDATE "appointments" SET "pet_id" = ?, "updated_at" = ? WHERE "appointments"."id" = ?  [["pet_id", 1], ["updated_at", "2017-04-01 01:58:36.732284"], ["id", 3]]
+  [1m[36m (103.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/appointments/3
+Completed 302 Found in 120ms (ActiveRecord: 105.0ms)
+
+
+Started GET "/appointments/3" for 127.0.0.1 at 2017-03-31 19:58:36 -0600
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAppointment Load (1.0ms)[0m  [1mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered appointments/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 270ms (Views: 267.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2017-03-31 19:58:41 -0600
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAppointment Load (0.0ms)[0m  [1mSELECT "appointments".* FROM "appointments"[0m
+  [1m[35mPet Load (0.0ms)[0m  SELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered appointments/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 311ms (Views: 305.9ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-03-31 19:59:54 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ippvp635veEnvVvTC3ZMwD6BR076Rxhwiqyv4pU855rx0a0BPZ+eSKDhlRJE0ft9BdfcMBE56cFTZZcFQtQPgQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-31 19:59:54 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-31 19:59:55 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 334ms (Views: 333.0ms | ActiveRecord: 0.0ms)
